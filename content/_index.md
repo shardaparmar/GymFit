@@ -1,0 +1,4 @@
+---
+title: "GymFit| Fitness template"
+
+---
