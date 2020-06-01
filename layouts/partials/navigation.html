@@ -1,0 +1,48 @@
+{{- if .Site.IsServer -}} {{ "<!-- layouts: partial/navigation.html-->" | safeHTML }} {{- end -}}
+
+  <!-- Header Start -->
+  <nav class="navbar navbar-expand-lg navigation fixed-top" id="navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/">
+        <h2 class="text-white text-capitalize"></i>Gym<span class="text-color">Fit</span></h2>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsid"
+        aria-controls="navbarsid" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="ti-view-list"></span>
+      </button>
+      <div class="collapse text-center navbar-collapse" id="navbarsid">
+
+        <ul class="navbar-nav mx-auto">
+
+          {{ range .Site.Menus.main }}
+          {{ if .HasChildren }}
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true"
+                  aria-expanded="false">{{ .Name }}</a>
+                <ul class="dropdown-menu">
+                  {{ range .Children  }}
+                  <li><a class="dropdown-item" href="{{ .URL }}">{{ .Name }}</a></li>
+                  {{ end }}
+                </ul>
+              </li>
+            {{ else }}
+
+            <li class="nav-item">
+              <a class="nav-link" href="{{ .URL }}">{{ .Name }}</a>
+            </li>
+
+            {{ end }}
+          {{ end }}
+        </ul>
+
+        <div class="my-md-0 ml-lg-4 mt-4 mt-lg-0 ml-auto text-lg-right mb-3 mb-lg-0">
+          <a href="tel:+23-345-67890">
+            <h3 class="text-color mb-0"><i class="ti-mobile mr-2"></i>+23-563-5688</h3>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- Header Close -->
+
+{{- if .Site.IsServer -}} {{ "<!-- end layouts: partial/navigation.html-->" | safeHTML }} {{- end -}}
