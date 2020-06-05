@@ -10,11 +10,56 @@
     
     
     <item>
-      <title>course 1</title>
+      <title>course - 1</title>
       <link>/courses/course1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/courses/course1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>course - 2</title>
+      <link>/courses/course2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/courses/course2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>course - 3</title>
+      <link>/courses/course3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/courses/course3/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>course - 4</title>
+      <link>/courses/course4/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/courses/course4/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>course - 5</title>
+      <link>/courses/course5/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/courses/course5/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>course - 6</title>
+      <link>/courses/course6/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/courses/course6/</guid>
       <description></description>
     </item>
     

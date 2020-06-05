@@ -1,0 +1,44 @@
+{{ define "main" }}
+{{- if .Site.IsServer -}} {{ "<!-- layouts: services/single.html-->" | safeHTML }} {{- end -}}
+
+<div class="main-wrapper ">
+  
+  <!-- Section About start -->
+  <section class="section services">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+          <div class="section-title">
+            <div class="divider mb-3"></div>
+            <h2>{{ .Params.heading }}</h2>
+            <p class="mt-3">{{ .Params.des }}</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        {{ range .Params.services }}
+        <div class="col-lg-6 col-md-6 col-sm-6">
+          <div class="media align-items-center mb-4">
+            <img src="{{ .image }}" class="mr-3 w-50" alt="...">
+
+            <div class="media-body">
+              <span class="letter-spacing text-sm">{{ .title }}</span>
+              <h4 class="mb-3 text-uppercase">{{ .heading }}</h4>
+              <p>{{ .description }}</p>
+            </div>
+          </div>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+  <!-- Section About End -->
+
+  <!-- Section Testimonial Start -->
+  {{ partial "slider.html" . }}
+  <!-- Section Testimonial END -->
+
+</div>
+{{- if .Site.IsServer -}} {{ "<!-- layouts: services/single.html-->" | safeHTML }} {{- end -}}
+{{ end }}

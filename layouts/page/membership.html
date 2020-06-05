@@ -1,0 +1,94 @@
+{{ define "main" }}
+{{- if .Site.IsServer -}} {{ "<!-- layouts: membership/single.html-->" | safeHTML }} {{- end -}}
+
+
+<div class="main-wrapper ">
+
+  <!-- Section pricing start -->
+  <section class="section pricing">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+          <div class="section-title">
+            <div class="divider mb-3"></div>
+            <h2>Package Pricing</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        {{ range .Params.pricing }}
+        <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+          <div class="card rounded-0 px-4 py-5 ">
+            <h4 class="card-title text-capitalize font-weight-normal font-secondary">
+              <span class="text-sm bg-dark {{ .disp_none }} text-light py-1 px-2 mr-2">Popular</span>
+                {{ .name }} </h4>
+            <h3 class="text-lg font-secondary position-relative mt-2"><sup class="text-sm position-absolute">{{ .sign }}</sup>{{ .digit }}
+              <sub>{{ .month }}</sub></h3>
+
+            <div class="card-body mt-2">
+              <ul class="list-unstyled lh-35 mb-4">
+                <li class="{{ .text_font1 }}"><i class="{{ .icon1 }} mr-3 {{ .text_color1 }} "></i>{{ .text1 }}</li>
+                <li class="{{ .text_font2 }}"><i class="{{ .icon2 }} mr-3 {{ .text_color2 }} "></i>{{ .text2 }}
+                </li>
+                <li class="{{ .text_font3 }}"><i class="{{ .icon3 }} mr-3 {{ .text_color3 }} "></i>{{ .text3 }}</li>
+                <li class="{{ .text_font4 }}"><i class="{{ .icon4 }} mr-3 {{ .text_color4 }}"></i>{{ .text4 }}</li>
+                <li class="{{ .text_font5 }}"><i class="{{ .icon5 }} mr-3 {{ .text_color5 }}"></i>{{ .text5 }}</li>
+              </ul>
+              <a href="#" class="btn {{ .btn_design }}">{{ .button }}</a>
+            </div>
+          </div>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+  <!-- Section pricing End -->
+
+  <!-- Section pricing start -->
+  <section class="section pricing bg-gray">
+    <div class="container">
+
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+          <div class="section-title">
+            <div class="divider mb-3"></div>
+            <h2>Package Pricing</h2>
+          </div>
+        </div>
+      </div>
+      
+      <div class="row justify-content-center">
+
+        {{ range .Params.pricing }}
+        <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+          <div class="card px-4 py-5  rounded-0 bg-4">
+            <div class="position-relative">
+              <h4 class="card-title text-capitalize font-weight-normal font-secondary text-white "><span
+                  class="text-sm bg-primary  {{ .disp_none }} text-white py-1 px-2 mr-2">Popular</span>{{ .name }} </h4>
+              <h3 class="text-lg font-secondary position-relative mt-2 text-white "><sup
+                  class="text-sm position-absolute">{{ .sign }}</sup>{{ .digit }}<sub>{{ .month }}</sub></h3>
+
+              <div class="card-body mt-2">
+                <ul class="list-unstyled lh-35 mb-4">
+                  <li class="text-white"><i class="{{ .icon1 }} mr-3 text-color "></i>{{ .text1 }}</li>
+                  <li class="text-white"><i class="{{ .icon2 }} mr-3 text-color "></i>{{ .text2 }}</li>
+                  <li class="text-white"><i class="{{ .icon3 }} mr-3 text-color "></i>{{ .text3 }}</li>
+                  <li class="text-white-50"><i class="{{ .icon4 }} mr-3"></i>{{ .text4 }}</li>
+                  <li class="text-white-50"><i class="{{ .icon5 }} mr-3"></i>{{ .text5 }}</li>
+                </ul>
+                <a href="#" class="btn  {{ .btn_design2 }} btn-main">{{ .button }}</a>
+              </div>
+            </div>
+          </div>
+        </div>
+       {{ end }}
+
+      </div>
+    </div>
+  </section>
+  <!-- Section pricing End -->
+
+
+</div>
+{{- if .Site.IsServer -}} {{ "<!-- end layouts: membership/single.html-->" | safeHTML }} {{- end -}}
+{{ end }}

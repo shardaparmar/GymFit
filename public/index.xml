@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GymFit| Fitness template on </title>
+    <link>/</link>
+    <description>Recent content in GymFit| Fitness template on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>About Us</title>
+      <link>/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/about/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Our Services</title>
+      <link>/services/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/services/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pricing</title>
+      <link>/membership/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/membership/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Team</title>
+      <link>/trainer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/trainer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>blog - 1 </title>
+      <link>/blog/blog1-copy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/blog1-copy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>blog - 1 </title>
+      <link>/blog/blog1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/blog1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>blog - 2 </title>
+      <link>/blog/blog2-copy-2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/blog2-copy-2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>blog - 2 </title>
+      <link>/blog/blog2-copy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/blog2-copy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>blog - 2 </title>
+      <link>/blog/blog2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/blog2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>blog - 3 </title>
+      <link>/blog/bog3-copy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/bog3-copy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>blog - 3 </title>
+      <link>/blog/bog3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/bog3/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>blog - 4 </title>
+      <link>/blog/bog4-copy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/bog4-copy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>blog - 4 </title>
+      <link>/blog/bog4/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/bog4/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>blog - 5 </title>
+      <link>/blog/bog5/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/bog5/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>blog - 6 </title>
+      <link>/blog/bog6/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/bog6/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>contact</title>
+      <link>/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/contact/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>course - 1</title>
+      <link>/courses/course1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/courses/course1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>course - 2</title>
+      <link>/courses/course2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/courses/course2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>course - 3</title>
+      <link>/courses/course3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/courses/course3/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>course - 4</title>
+      <link>/courses/course4/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/courses/course4/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>course - 5</title>
+      <link>/courses/course5/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/courses/course5/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>course - 6</title>
+      <link>/courses/course6/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/courses/course6/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

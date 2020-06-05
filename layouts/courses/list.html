@@ -1,0 +1,50 @@
+{{ define "main" }}
+{{- if .Site.IsServer -}} {{ "<!-- layouts: courses/list.html-->" | safeHTML }} {{- end -}}
+
+<div class="main-wrapper ">
+
+  <!-- Section Course Start -->
+  <section class="section course">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+          <div class="section-title">
+            <div class="divider mb-3"></div>
+            <h2>Popular Courses</h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        {{ range .Pages.ByWeight }}
+        <div class="col-lg-4 col-md-6">
+          <div class="card rounded-0 p-0 mb-5">
+            <img src="{{ .Params.image }}" alt="" class="img-fluid">
+
+            <div class="card-body">
+              <a href="{{ .RelPermalink }}">
+                <h4 class="mt-3 mb-0">{{ .Params.heading }}</h4>
+              </a>
+              <p class=" mb-2">{{ .Params.name }}</p>
+              <ul class="list-inline">
+                <li class="list-inline-item">
+                  <i class="ti-time mr-2 text-color"></i>{{ .Params.days }}
+                </li>
+                <li class="list-inline-item text-black">
+                  <strong>{{ .Params.time }}</strong>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        {{ end }}
+       
+      </div>
+    </div>
+  </section>
+  <!-- Section Course ENd -->
+</div>
+
+
+{{- if .Site.IsServer -}} {{ "<!-- end layouts: courses/list.html-->" | safeHTML }} {{- end -}}
+{{ end }}

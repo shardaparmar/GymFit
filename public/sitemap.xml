@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>/about/</loc>
+  </url>
+  
+  <url>
+    <loc>/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/courses/</loc>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+  </url>
+  
+  <url>
+    <loc>/blog/</loc>
+  </url>
+  
+  <url>
+    <loc>/services/</loc>
+  </url>
+  
+  <url>
+    <loc>/membership/</loc>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/trainer/</loc>
+  </url>
+  
+  <url>
+    <loc>/blog/blog1-copy/</loc>
+  </url>
+  
+  <url>
+    <loc>/blog/blog1/</loc>
+  </url>
+  
+  <url>
+    <loc>/blog/blog2-copy-2/</loc>
+  </url>
+  
+  <url>
+    <loc>/blog/blog2-copy/</loc>
+  </url>
+  
+  <url>
+    <loc>/blog/blog2/</loc>
+  </url>
+  
+  <url>
+    <loc>/blog/bog3-copy/</loc>
+  </url>
+  
+  <url>
+    <loc>/blog/bog3/</loc>
+  </url>
+  
+  <url>
+    <loc>/blog/bog4-copy/</loc>
+  </url>
+  
+  <url>
+    <loc>/blog/bog4/</loc>
+  </url>
+  
+  <url>
+    <loc>/blog/bog5/</loc>
+  </url>
+  
+  <url>
+    <loc>/blog/bog6/</loc>
+  </url>
+  
+  <url>
+    <loc>/contact/</loc>
+  </url>
+  
+  <url>
+    <loc>/courses/course1/</loc>
+  </url>
+  
+  <url>
+    <loc>/courses/course2/</loc>
+  </url>
+  
+  <url>
+    <loc>/courses/course3/</loc>
+  </url>
+  
+  <url>
+    <loc>/courses/course4/</loc>
+  </url>
+  
+  <url>
+    <loc>/courses/course5/</loc>
+  </url>
+  
+  <url>
+    <loc>/courses/course6/</loc>
+  </url>
+  
+</urlset>
