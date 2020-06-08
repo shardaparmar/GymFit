@@ -1,19 +1,19 @@
 {{ define "main" }}
-  {{- if .Site.IsServer -}} {{ "<!-- layouts: courses/list.html-->" | safeHTML }} {{- end -}}
+  {{- if .Site.IsServer -}} {{ "<!-- layouts: categories/list.html-->" | safeHTML }} {{- end -}}
 
     <div class="main-wrapper ">
 
       <!-- Section Course Start -->
       <section class="section course">
         <div class="container">
-          <div class="row justify-content-center">
+          <!-- <div class="row justify-content-center">
             <div class="col-lg-8 text-center">
               <div class="section-title">
                 <div class="divider mb-3"></div>
-                <h2>Popular Courses</h2>
+                <h2>Popular Courses Categories</h2>
               </div>
             </div>
-          </div>
+          </div> -->
 
           <div class="row">
             {{ range .Pages.ByWeight }}
@@ -43,7 +43,8 @@
         </div>
       </section>
       <!-- Section Course ENd -->
+
     </div>
 
-  {{- if .Site.IsServer -}} {{ "<!-- end layouts: courses/list.html-->" | safeHTML }} {{- end -}}
+  {{- if .Site.IsServer -}} {{ "<!-- end layouts: categories/list.html-->" | safeHTML }} {{- end -}}
 {{ end }}

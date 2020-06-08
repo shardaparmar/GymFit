@@ -1,0 +1,121 @@
+paginate = 6
+
+
+[params]
+  [params.data]
+  home = "HOME"
+  top_left_logo = "Gym"
+  top_right_logo = "Fit"
+  phone = "tel:+23-345-67890"
+  icon = "ti-mobile"
+  phone2 = "+23-563-5688"
+
+  footer_date1 = "2019-02-30T11:00:00+05:30"
+  footer_date2 = "2019-02-30T11:00:00+05:30"
+
+  footer_logo = "GymFit"
+  footer_des = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus illo ad quo sunt maiores, sint nostrum omnis eaque cumque dolorum."
+  footer_des2 = "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+
+  location = "Home location"
+  address = "Washington 6036 Richmond hwy., Alexandria, VA USA 22303"
+  mobile = "+1 (409) 987–5874"
+  gmail = "info@demolink.org"
+
+  presented = "Gymfit © 2019 , Theme By"
+  web_url = "https://themefisher.com/"
+  website = "Themefisher.com"
+
+  facebook = "https://www.facebook.com/themefisher"
+  fb_icon = "ti-facebook"
+  twitter = "https://twitter.com/themefisher"
+  twt_icon = "ti-twitter"
+  github = "https://github.com/themefisher/"
+  gtb_icon = "ti-github"
+  in_icon = "ti-linkedin"
+  pin_icon = "ti-pinterest"
+  drib_icon = "ti-dribbble"
+
+
+
+   
+
+
+####### navigation #######   
+
+#main menu
+[menu]
+
+ [[menu.main]]
+  name = "home"
+  url = "/"
+  weight = "100"
+
+  [[menu.main]]
+  name = "pages"
+  weight = "200"
+  hasChildren = true
+
+    [[menu.main]]
+    parent = "pages"
+    name = "about"
+    URL = "/about/"
+
+    [[menu.main]]
+    parent = "pages"
+    name = "trainer"
+    URL = "/trainer/"
+
+    [[menu.main]]
+    parent = "pages"
+    name = "services"
+    URL = "/services/"
+
+ [[menu.main]]
+  name = "courses"
+  url = "/courses/"
+  weight = "300" 
+
+ [[menu.main]]
+  name = "membership"
+  url = "/membership/"
+  weight = "400"
+ 
+ [[menu.main]]
+  name = "blog"
+  url = "/blog/"
+  weight = "500" 
+
+ [[menu.main]]
+  name = "contact"
+  url = "/contact/"
+  weight = "600"
+ 
+#footer menu
+ 
+ [[menu.footer]]
+  name = "About Us"
+  url = "/about/"
+  weight = "100"
+
+ [[menu.footer]]
+  name = "Services"
+  url = "/services/"
+  weight = "200"
+
+ [[menu.footer]]
+  name = "membership"
+  url = "/membership/"
+  weight = "300"
+
+ [[menu.footer]]
+  name = "Courses"
+  url = "/courses/"
+  weight = "400"
+
+ [[menu.footer]]
+  name = "Contact Us"
+  url = "/contact/"
+  weight = "100"
+
+

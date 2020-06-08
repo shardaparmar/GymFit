@@ -1,52 +1,52 @@
 {{ define "main" }}
-{{- if .Site.IsServer -}} {{ "<!-- layouts: trainer/single.html-->" | safeHTML }} {{- end -}}
+  {{- if .Site.IsServer -}} {{ "<!-- layouts: trainer/single.html-->" | safeHTML }} {{- end -}}
 
-<div class="main-wrapper ">
-  
-  <!-- Section Team Start -->
-  <section class="section bg-gray">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-lg-8 text-center">
-          <div class="section-title">
-            <div class="divider mb-3"></div>
-            <h2>Our Trainer</h2>
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
-        {{ range .Params.trainers }}
-        <div class="col-lg-6">
-          <div class="card border-0 mb-1  bg-transparent rounded-0 mb-4">
-            <div class="row no-gutters align-items-center">
-              <div class="col-md-6">
-                <img src="{{ .image }}" alt="" class="img-fluid w-100">
-              </div>
-              <div class="col-md-6">
-                <div class="card-body team-wrap pl-4">
-                  <h3 class="card-title text-color">{{ .name }}</h3>
-                  <h6 class="card-subtitle pb-4 letter-spacing">{{ .tagline }}</h6>
-                  <p class="mb-5">{{ .description }}</p>
-                  <ul class="list-inline ">
-                    <li class="list-inline-item"><a href="#"><i class="{{ .facebook }}"></i></a></li>
-                    <li class="list-inline-item"><a href="#"><i class="{{ .twitter }}"></i></a></li>
-
-                    <li class="list-inline-item"><a href="#"><i class="{{ .linkedin }}"></i></a></li>
-                  </ul>
-                </div>
+    <div class="main-wrapper ">
+      
+      <!-- Section Team Start -->
+      <section class="section bg-gray">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-8 text-center">
+              <div class="section-title">
+                <div class="divider mb-3"></div>
+                <h2>Our Trainer</h2>
               </div>
             </div>
           </div>
+
+          <div class="row">
+            {{ range .Params.trainers }}
+              <div class="col-lg-6">
+                <div class="card border-0 mb-1  bg-transparent rounded-0 mb-4">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col-md-6">
+                      <img src="{{ .image }}" alt="" class="img-fluid w-100">
+                    </div>
+                    <div class="col-md-6">
+                      <div class="card-body team-wrap pl-4">
+                        <h3 class="card-title text-color">{{ .name }}</h3>
+                        <h6 class="card-subtitle pb-4 letter-spacing">{{ .tagline }}</h6>
+                        <p class="mb-5">{{ .description }}</p>
+                        <ul class="list-inline ">
+                          <li class="list-inline-item"><a href="#"><i class="{{ .facebook }}"></i></a></li>
+                          <li class="list-inline-item"><a href="#"><i class="{{ .twitter }}"></i></a></li>
+
+                          <li class="list-inline-item"><a href="#"><i class="{{ .linkedin }}"></i></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            {{ end }}
+          </div>
         </div>
-        {{ end }}
-      </div>
+      </section>
+      <!-- Section Team End -->
+
+
     </div>
-  </section>
-  <!-- Section Team End -->
 
-
-</div>
-
-{{- if .Site.IsServer -}} {{ "<!-- layouts: trainer/single.html-->" | safeHTML }} {{- end -}}
+  {{- if .Site.IsServer -}} {{ "<!-- layouts: trainer/single.html-->" | safeHTML }} {{- end -}}
 {{ end }}

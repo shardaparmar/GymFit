@@ -1,0 +1,44 @@
+{{ define "main" }}
+  {{- if .Site.IsServer -}} {{ "<!-- layouts: tags/list.html-->" | safeHTML }} {{- end -}}
+
+    <div class="main-wrapper ">
+
+      <!-- Section Blog start -->
+      <section class="section blog bg-gray">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-9">
+              <div class="row">
+                {{ range .Pages.ByWeight }}
+                  <div class="col-lg-6 col-md-6">
+                    <article class="card border-0 rounded-0 mb-4">
+                      <img src="{{ .Params.image }}" alt="" class="img-fluid">
+
+                      <div class="mt-3 px-4 py-3 ">
+                        <div class="blog-post-meta text-capitalize mb-2">
+                          <span class="post-meta date-meta mr-2">
+                            <i class="ti-calendar mr-2"></i>2-2-2</span>
+
+                          <span class="post-meta author"><i class="ti-user mr-2 text-muted"></i>{{ .Params.name }}</span>
+                        </div>
+                        <a href="{{ .RelPermalink }}">
+                          <h4 class="mb-3 font-secondary">{{ .Params.blog_heading }}</h4>
+                        </a>
+
+                        <p class="mb-4">{{ .Params.description }}</p>
+
+                        <a href="{{ .RelPermalink }}" class="text-color mb-3 d-block"><i class="ti-minus mr-2"></i>{{ .Params.button }}</a>
+                      </div>
+                    </article>
+                  </div>
+                {{ end }}             
+              </div>            
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Section Blog End -->
+    </div>
+
+  {{- if .Site.IsServer -}} {{ "<!-- layouts: tags/list.html-->" | safeHTML }} {{- end -}}
+{{ end }}

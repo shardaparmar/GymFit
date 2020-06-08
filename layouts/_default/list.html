@@ -1,147 +1,124 @@
 {{ define "main" }}
-{{- if .Site.IsServer -}} {{ "<!-- layouts: blog/list.html-->" | safeHTML }} {{- end -}}
+  {{- if .Site.IsServer -}} {{ "<!-- layouts: blog/list.html-->" | safeHTML }} {{- end -}}
 
+    <div class="main-wrapper ">
 
-<div class="main-wrapper ">
-
-  <!-- Section Blog start -->
-  <section class="section blog bg-gray">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-9">
+      <!-- Section Blog start -->
+      <section class="section blog bg-gray">
+        <div class="container">
           <div class="row">
-            {{ range .Paginator.Pages.ByWeight }}
-            <div class="col-lg-6 col-md-6">
-              <article class="card border-0 rounded-0 mb-4">
-                <img src="{{ .Params.image }}" alt="" class="img-fluid">
+            <div class="col-lg-9">
+              <div class="row">
+                {{ range .Paginator.Pages.ByWeight }}
+                  <div class="col-lg-6 col-md-6">
+                    <article class="card border-0 rounded-0 mb-4">
+                      <img src="{{ .Params.image }}" alt="" class="img-fluid">
+                      <div class="mt-3 px-4 py-3 ">
+                        <div class="blog-post-meta text-capitalize mb-2">
+                          <span class="post-meta date-meta mr-2">
+                            <i
+                              class="ti-calendar mr-2"></i>{{ dateFormat "January 02, 2006" .Params.blog_date | safeHTML }}</span>
 
-                <div class="mt-3 px-4 py-3 ">
-                  <div class="blog-post-meta text-capitalize mb-2">
-                    <span class="post-meta date-meta mr-2">
-                      <i class="ti-calendar mr-2"></i>{{ dateFormat "January 02, 2006" .Params.blog_date | safeHTML }}</span>
+                          <span class="post-meta author"><i class="ti-user mr-2 text-muted"></i>{{ .Params.name }}</span>
+                        </div>
+                        <a href="{{ .RelPermalink }}">
+                          <h4 class="mb-3 font-secondary">{{ .Params.blog_heading }}</h4>
+                        </a>
 
-                    <span class="post-meta author"><i class="ti-user mr-2 text-muted"></i>{{ .Params.name }}</span>
+                        <p class="mb-4">{{ .Params.description }}</p>
+
+                        <a href="{{ .RelPermalink }}" class="text-color mb-3 d-block"><i
+                            class="ti-minus mr-2"></i>{{ .Params.button }}</a>
+                      </div>
+                    </article>
                   </div>
-                  <a href="{{ .RelPermalink }}">
-                    <h4 class="mb-3 font-secondary">{{ .Params.blog_heading }}</h4>
-                  </a>
+                {{ end }}
 
-                  <p class="mb-4">{{ .Params.description }}</p>
+              </div>
+              <div class="row">
+                <div class="col-lg-12 mt-5">
+                  <nav aria-label="Page navigation ">
+                    <ul class="pagination justify-content-center">
+                      {{ $paginator := .Paginate .Pages }}
+                       {{ if .Paginator.HasPrev }}
+                          <li class="page-item active"><a class="page-link" href="{{ .Paginator.Prev.URL }}">Previous</a></li>
+                        {{ end }}
+                        {{ if .Paginator.HasNext }}
+                          <!-- <li class="page-item active" aria-current="page"><a class="page-link" href="#">1</a></li> -->
+                          <!-- <li class="page-item"><a class="page-link" href="#">2</a></li> -->
+                          <!-- <li class="page-item"><a class="page-link" href="#">3</a></li> -->
+                          <li class="page-item"><a class="page-link" href="{{ .Paginator.Next.URL }}">Next</a></li>
 
-                  <a href="{{ .RelPermalink }}" class="text-color mb-3 d-block"><i class="ti-minus mr-2"></i>{{ .Params.button }}</a>
+                        {{ end }}
+                    </ul>
+                  </nav>
                 </div>
-              </article>
+              </div>
             </div>
-            {{ end }}
-           
-          </div>
-          <div class="row">
-            <div class="col-lg-12 mt-5">
-              <nav aria-label="Page navigation ">
-                <ul class="pagination justify-content-center">
-                  {{ $paginator := .Paginate .Pages }}
-                  {{ if .Paginator.HasPrev }}
-                  <li class="page-item active"><a class="page-link" href="{{ .Paginator.Prev.URL }}">Previous</a></li>
+            <div class="col-lg-3">
+              <div class="card border-0 rounded-0 mb-5">
+                <form action="#" class="search position-relative">
+                  <input type="text" placeholder="Search" class="form-control">
+                  <i class="ti-search"></i>
+                </form>
+              </div>
+
+              <div class="mb-5 follow">
+                <h5 class="font-secondary mb-4"><i class="ti-minus mr-2 text-color"></i>Follow us</h5>
+
+                <a href="#" class="text-muted"><i class="{{ .Site.Params.data.fb_icon }}"></i></a>
+                <a href="#" class="text-muted"><i class="{{ .Site.Params.data.twt_icon }}"></i></a>
+                <a href="#" class="text-muted"><i class="{{ .Site.Params.data.in_icon }}"></i></a>
+                <a href="#" class="text-muted"><i class="{{ .Site.Params.data.pin_icon }}"></i></a>
+                <a href="#" class="text-muted"><i class="{{ .Site.Params.data.drib_icon }}"></i></a>
+              </div>
+
+              <div class="mb-5 post">
+                <h5 class="font-secondary mb-4"><i class="ti-minus mr-2 text-color"></i>Popular posts</h5>
+                {{  range first 3 (where .Pages "Type" "blog").ByWeight }}
+                  <div class="media mb-4">
+                    <img src="{{ .Params.image }}" alt="" class="img-fluid pr-4 w-50 align-self-center">
+                    <div class="media-body">
+                      <a href="{{ .RelPermalink }}" class="text-black d-block lh-25"> {{ .Params.post_heading }}</a>
+                    </div>
+                  </div>
+                {{ end }}
+              </div>
+
+              <div class="mb-5 categories">
+                <h5 class="font-secondary mb-4"><i class="ti-minus mr-2 text-color"></i>Categories</h5>
+
+                <ul class="list-group " id="category">
+
+                  {{ range .Pages }}
+                    {{ range $name, $taxonomy := .Site.Taxonomies.categories }}
+                      <li class="list-group-item d-flex justify-content-between align-items-center rounded-0 border-0">
+                        <a href="/category/{{ $name | urlize }}" class="text-muted">{{ $name | humanize }}</a>
+                       <span class="badge bg-primary badge-pill text-white border-0">{{ $taxonomy.Count }}</span>
+                      </li>
+                    {{ end }}
                   {{ end }}
-                  {{ if .Paginator.HasNext }}
-                  <!-- <li class="page-item active" aria-current="page"><a class="page-link" href="#">1</a></li> -->
-                  <!-- <li class="page-item"><a class="page-link" href="#">2</a></li> -->
-                  <!-- <li class="page-item"><a class="page-link" href="#">3</a></li> -->
-                  <li class="page-item"><a class="page-link" href="{{ .Paginator.Next.URL }}">Next</a></li>
-                  {{ end }}
+
                 </ul>
-              </nav>
+              </div>
+
+              <div class="mb-5 tags tagcloud" id="tagcloud">
+                <h5 class="font-secondary mb-4"><i class="ti-minus mr-2 text-color"></i>Tags</h5>
+                {{ range .Pages }}
+                  {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
+                    <a href="/tags/{{ $name | urlize }}">{{ $name | humanize }}</a>
+                  {{ end }}
+                {{ end }}
+
+              </div>
+
             </div>
           </div>
         </div>
-        <div class="col-lg-3">
-          <div class="card border-0 rounded-0 mb-5">
-            <form action="#" class="search position-relative">
-              <input type="text" placeholder="Search" class="form-control">
-              <i class="ti-search"></i>
-            </form>
-          </div>
+      </section>
+      <!-- Section Blog End -->
 
-          <div class="mb-5 follow">
-            <h5 class="font-secondary mb-4"><i class="ti-minus mr-2 text-color"></i>Follow us</h5>
-
-            <a href="#" class="text-muted"><i class="ti-facebook"></i></a>
-            <a href="#" class="text-muted"><i class="ti-twitter"></i></a>
-            <a href="#" class="text-muted"><i class="ti-linkedin"></i></a>
-            <a href="#" class="text-muted"><i class="ti-pinterest"></i></a>
-            <a href="#" class="text-muted"><i class="ti-dribbble"></i></a>
-          </div>
-
-
-          <div class="mb-5">
-            <h5 class="font-secondary mb-4"><i class="ti-minus mr-2 text-color"></i>Popular posts</h5>
-
-            <div class="media mb-4">
-              <img src="/images/blog/blog-post-5.jpg" alt="" class="img-fluid pr-4 w-50 align-self-center">
-              <div class="media-body">
-                <a href="#" class="text-black d-block lh-25"> Track your daily body fitness</a>
-              </div>
-            </div>
-
-            <div class="media mb-4">
-              <img src="/images/blog/blog-post-6.jpg" alt="" class="img-fluid pr-4 w-50 align-self-center">
-              <div class="media-body">
-                <a href="#" class="text-black d-block lh-25">Keep your body fitness track</a>
-              </div>
-            </div>
-
-            <div class="media mb-4">
-              <img src="/images/blog/post1.jpg" alt="" class="img-fluid pr-4 w-50 align-self-center">
-              <div class="media-body">
-                <a href="#" class="text-black d-block lh-25">Keep your body fitness track</a>
-              </div>
-            </div>
-          </div>
-
-
-          <div class="mb-5 categories">
-            <h5 class="font-secondary mb-4"><i class="ti-minus mr-2 text-color"></i>Categories</h5>
-
-            <ul class="list-group">
-              <li class="list-group-item d-flex justify-content-between align-items-center rounded-0 border-0">
-                <a href="#" class="text-muted">Fitness</a>
-                <span class="badge bg-primary badge-pill text-white border-0">14</span>
-              </li>
-              <li class="list-group-item d-flex justify-content-between align-items-center rounded-0 border-0">
-                <a href="#" class="text-muted">Body building</a>
-                <span class="badge bg-primary badge-pill text-white">2</span>
-              </li>
-              <li class="list-group-item d-flex justify-content-between align-items-center rounded-0 border-0">
-                <a href="#" class="text-muted">Cycling</a>
-                <span class="badge bg-primary badge-pill text-white">1</span>
-              </li>
-              <li class="list-group-item d-flex justify-content-between align-items-center rounded-0 border-0">
-                <a href="#" class="text-muted"> Paracyling</a>
-                <span class="badge bg-primary badge-pill text-white">5</span>
-              </li>
-            </ul>
-          </div>
-
-          <div class="mb-5 tags">
-            <h5 class="font-secondary mb-4"><i class="ti-minus mr-2 text-color"></i>Tags</h5>
-
-            <a href="#">body</a>
-            <a href="#">fitness</a>
-            <a href="#">health</a>
-            <a href="#">diet</a>
-            <a href="#">plan</a>
-            <a href="#">gym</a>
-            <a href="#">trainer</a>
-            <a href="#">tutorials</a>
-          </div>
-
-        </div>
-      </div>
     </div>
-  </section>
-  <!-- Section Blog End -->
-</div>
 
-
-{{- if .Site.IsServer -}} {{ "<!-- end layouts: blog/list.html-->" | safeHTML }} {{- end -}}
+  {{- if .Site.IsServer -}} {{ "<!-- end layouts: blog/list.html-->" | safeHTML }} {{- end -}}
 {{ end }}

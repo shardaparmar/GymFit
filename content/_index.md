@@ -6,6 +6,9 @@ header_title_name: "fitness Challange"
 header_title_name2: "with us"
 header_join_us: "Join Us"
 
+footer_date1: "2019-02-30T11:00:00+05:30"
+footer_date2: "2019-02-30T11:00:00+05:30"
+
 # Intoduction section
 Intoduction:
   - number: "01"
