@@ -10,8 +10,6 @@
         
         {{ partial "navigation.html" . }} 
         
-        {{ block "header" . }} {{ end }}
-        
         {{ if not .IsHome }}
 	      <!-- breadcrumb  -->
 	      {{ partial "breadcrumb.html" . }}  
