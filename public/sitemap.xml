@@ -3,7 +3,76 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/blog/make-your-fitness-boost-with-us/</loc>
+  </url>
+  
+  <url>
+    <loc>/blog/ethernity-beauty-health-diet-plan/</loc>
+  </url>
+  
+  <url>
+    <loc>/blog/ever-too-late-to-lose-weight/</loc>
+  </url>
+  
+  <url>
+    <loc>/blog/make-your-fitness-boost-with-us-2/</loc>
+  </url>
+  
+  <url>
+    <loc>/blog/make-your-fitness-boost-with-us-3/</loc>
+  </url>
+  
+  <url>
+    <loc>/blog/ethernity-beauty-health-diet-plan-2/</loc>
+  </url>
+  
+  <url>
+    <loc>/blog/make-your-fitness-boost-with-us-copy/</loc>
+  </url>
+  
+  <url>
+    <loc>/blog/ethernity-beauty-health-diet-plan-copy/</loc>
+  </url>
+  
+  <url>
+    <loc>/blog/ever-too-late-to-lose-weight-copy/</loc>
+  </url>
+  
+  <url>
+    <loc>/blog/make-your-fitness-boost-with-us-2-copy/</loc>
+  </url>
+  
+  <url>
     <loc>/about/</loc>
+  </url>
+  
+  <url>
+    <loc>/categories/body-building/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/courses/build-body-1/</loc>
+  </url>
+  
+  <url>
+    <loc>/courses/build-body-2/</loc>
+  </url>
+  
+  <url>
+    <loc>/courses/build-body-3/</loc>
+  </url>
+  
+  <url>
+    <loc>/courses/build-body4/</loc>
+  </url>
+  
+  <url>
+    <loc>/courses/build-body5/</loc>
+  </url>
+  
+  <url>
+    <loc>/courses/build-body6/</loc>
   </url>
   
   <url>
@@ -16,6 +85,16 @@
   </url>
   
   <url>
+    <loc>/categories/cycling/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/fitness/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/</loc>
   </url>
   
@@ -25,6 +104,11 @@
   
   <url>
     <loc>/services/</loc>
+  </url>
+  
+  <url>
+    <loc>/categories/paracyling/</loc>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -41,75 +125,22 @@
   </url>
   
   <url>
-    <loc>/blog/blog1-copy/</loc>
-  </url>
-  
-  <url>
-    <loc>/blog/blog1/</loc>
-  </url>
-  
-  <url>
-    <loc>/blog/blog2-copy-2/</loc>
-  </url>
-  
-  <url>
-    <loc>/blog/blog2-copy/</loc>
-  </url>
-  
-  <url>
-    <loc>/blog/blog2/</loc>
-  </url>
-  
-  <url>
-    <loc>/blog/bog3-copy/</loc>
-  </url>
-  
-  <url>
-    <loc>/blog/bog3/</loc>
-  </url>
-  
-  <url>
-    <loc>/blog/bog4-copy/</loc>
-  </url>
-  
-  <url>
-    <loc>/blog/bog4/</loc>
-  </url>
-  
-  <url>
-    <loc>/blog/bog5/</loc>
-  </url>
-  
-  <url>
-    <loc>/blog/bog6/</loc>
-  </url>
-  
-  <url>
     <loc>/contact/</loc>
   </url>
   
   <url>
-    <loc>/courses/course1/</loc>
+    <loc>/tags/fitness/</loc>
+    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/courses/course2/</loc>
+    <loc>/tags/health/</loc>
+    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/courses/course3/</loc>
-  </url>
-  
-  <url>
-    <loc>/courses/course4/</loc>
-  </url>
-  
-  <url>
-    <loc>/courses/course5/</loc>
-  </url>
-  
-  <url>
-    <loc>/courses/course6/</loc>
+    <loc>/tags/weight/</loc>
+    <priority>0</priority>
   </url>
   
 </urlset>

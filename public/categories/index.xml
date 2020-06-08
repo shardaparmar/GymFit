@@ -9,5 +9,41 @@
 	<atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
+    <item>
+      <title>Body building</title>
+      <link>/categories/body-building/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/body-building/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cycling</title>
+      <link>/categories/cycling/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/cycling/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Fitness</title>
+      <link>/categories/fitness/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/fitness/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Paracyling</title>
+      <link>/categories/paracyling/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/paracyling/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>
