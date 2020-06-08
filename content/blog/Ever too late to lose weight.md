@@ -11,4 +11,5 @@ description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, m
 button: "Read More"
 post_heading: "Track your daily body fitness"
 tags: ["health" , "weight"]
+categories: ["Fitness" , "Body building"]
 ---

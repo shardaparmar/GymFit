@@ -12,4 +12,5 @@ button: "Read More"
 post_heading: "Track your daily body fitness"
 
 tags: ["health" , "weight"]
+categories: ["Fitness" , "Body building" , "Paracyling"]
 ---

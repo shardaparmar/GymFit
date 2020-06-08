@@ -8,5 +8,5 @@ name: "Mentor: Jimmy Karter"
 days: "Monday-Tuesday :"
 time: "7am-12pm"
 disp_none: "d-none"
-categories: ["Paracyling"]
+
 ---

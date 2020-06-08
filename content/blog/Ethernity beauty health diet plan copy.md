@@ -12,6 +12,7 @@ button: "Read More"
 post_heading: "Track your daily body fitness"
 
 tags: ["weight"]
+categories: [ "Body building" , "Cycling"]
 
 ---
 

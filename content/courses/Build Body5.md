@@ -7,5 +7,5 @@ heading: "Build Body"
 name: "Mentor: Jimmy Karter"
 days: "Monday-Tuesday :"
 time: "7am-12pm"
-categories: ["Body building" , "Cycling"]
+
 ---

@@ -15,7 +15,7 @@
             <h4 class="mb-4 text-white letter-spacing text-uppercase">Recents Posts</h4>
             <div>
               <a href="blog-single.html" class="text-white">Claritas est etiam processus dynamicus</a>
-              <p class="text-sm mt-2 text-white-50">30 february 2019</p>
+              <p class="text-sm mt-2 text-white-50">{{ dateFormat "January 02, 2006" .Site.Params.data.footer_date1 | safeHTML }}</p>
             </div>
             <div class="mt-4">
               <a href="blog-single.html" class="text-white">Claritas est etiam processus dynamicus</a>

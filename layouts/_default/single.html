@@ -186,8 +186,8 @@
 
                     {{ range .Params.categories }}
                       <li class="list-group-item d-flex justify-content-between align-items-center rounded-0 border-0">
-                      <a href="/category/{{ . | urlize }}" class="text-muted">{{ . }}</a>
-                      <span class="badge bg-primary badge-pill text-white border-0">0</span>
+                      <a href="/categories/{{ . | urlize }}" class="text-muted">{{ . }}</a>
+                      <span class="badge bg-primary badge-pill text-white border-0"></span>
                       </li>
                     {{ end }}
                     
